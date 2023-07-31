@@ -1,0 +1,45 @@
+.contact-container {
+  background-color: $primary-blue-light;
+  padding-bottom: 130px;
+
+  .title-container {
+    background-color: $primary-blue;
+    color: white;
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 200px;
+
+    h2 {
+      color: white;
+    }
+
+    .contact__paragraph {
+      margin: 20px auto;
+      max-width: 639px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+
+      span{
+        font-weight: bolder;
+      }
+    }
+
+    .contact__mail {
+      font-family: $font-secondary;
+      font-size: 18px;
+      padding: 15px 32px;
+      border: 1px solid white;
+      border-radius: 6px;
+      width: 250px;
+      display: block;
+      margin: 0 auto;
+      transition: all 0.7s ease;
+
+      &:hover {
+        background-color: white;
+        color: $primary-blue;
+      }
+    }
+  }
+}

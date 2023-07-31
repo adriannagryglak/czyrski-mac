@@ -1,0 +1,113 @@
+.footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .footer-logo {
+      min-width: 200px;
+    }
+
+    .footer-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      @media (min-width: 580px) {
+        gap: 0;
+        justify-content: space-between;
+      }
+
+      @media (min-width: 1150px) {
+        gap: 50px;
+      }
+      @media (min-width: 1400px) {
+        gap: 100px;
+      }
+      @media (min-width: 1774px) {
+        gap: 150px;
+      }
+
+      .footer-nav {
+        display: flex;
+
+        @media (min-width: 956px) {
+          gap: 68px;
+        }
+
+        .footer-nav-container {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+
+          .footer-nav__link {
+            font-family: $font-secondary;
+            color: $text-dark;
+            margin-bottom: 7px;
+            white-space: nowrap;
+
+            &.active {
+              color: $primary-blue;
+              pointer-events: none;
+            }
+
+            &:hover {
+              color: $primary-blue;
+            }
+          }
+        }
+      }
+
+      .footer-contact {
+        padding-left: 16px;
+
+        li {
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
+  .footer__copyright {
+    font-family: $font-secondary;
+    opacity: 0.7;
+  }
+
+  @media (max-width: 956px) {
+    .footer-logo {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+
+      .logo {
+        margin: 0 auto;
+      }
+    }
+
+    .footer-details {
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 30px;
+      flex-basis: 100%;
+
+      @media (max-width: 956px) {
+        text-align: center;
+
+        .footer-nav-container:first-child {
+          text-align: left;
+          padding-right: 10px;
+        }
+        .footer-nav-container:nth-child(2) {
+          text-align: center;
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .footer__copyright {
+      text-align: center;
+    }
+  }
+}
